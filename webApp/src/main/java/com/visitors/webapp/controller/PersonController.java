@@ -3,29 +3,31 @@ package com.visitors.webapp.controller;
 import com.google.gson.Gson;
 import com.visitors.webapp.model.bl.PersonBl;
 import com.visitors.webapp.model.entity.Person;
+import org.jboss.resteasy.annotations.Form;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.net.URI;
 
 @Path("/person")
 public class PersonController {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getPersons() throws Exception {
-        return Response.ok().entity(PersonBl.getPersonBl().findAll()).build();
+//        return Response.ResponseBuilder.entity(PersonBl.getPersonBl().findAll()).build();
+        return null;
     }
 
     @POST
-    public String save(
-            @QueryParam("id") int id,
-            @QueryParam("firstName") String firstName,
-            @QueryParam("LastName") String lastName) {
-        Gson json = new Gson();
-        return json.toJson(Person.builder()
-                .id(10)
-                .firstName("Milad")
-                .lastName("Parsa")
-                .build());
+    public Response save(
+            @FormParam("name") String firstName,
+            @QueryParam("LastName") String lastName) throws Exception {
+
+        Person person = Person.builder().firstName(firstName).lastName(lastName).build();
+        PersonBl.getPersonBl().save(person);
+        URI location = new URI("login.html");
+        return Response.temporaryRedirect(location).build();
     }
 
 //    public static String save(String firstName, String lastName, int age, String nationalId, String email, Gender gender, String phone_number, Status status, LocalDate birthDate, City city, String username, String password, Role role, MedicalService medicalService) {

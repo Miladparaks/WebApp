@@ -66,3 +66,5 @@ CREATE TABLE VISIT
 );
 create sequence visit_seq start with 1 increment by 1;
 
+
+select * from TIMING where "2020-01-02T17:20" between start_time and end_time;
