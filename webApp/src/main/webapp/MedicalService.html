@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>صفحه خدمات</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Font Awesome -->
+    <link
+            rel="stylesheet"
+            href="plugins/font-awesome/css/font-awesome.min.css"/>
+    <!-- Ionicons -->
+    <!-- <link
+        rel="stylesheet"
+        href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" /> -->
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css"/>
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/iCheck/flat/blue.css"/>
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="plugins/morris/morris.css"/>
+    <!-- jvectormap -->
+    <link
+            rel="stylesheet"
+            href="plugins/jvectormap/jquery-jvectormap-1.2.2.css"/>
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="plugins/datepicker/datepicker3.css"/>
+    <!-- Daterange picker -->
+    <link
+            rel="stylesheet"
+            href="plugins/daterangepicker/daterangepicker-bs3.css"/>
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link
+            rel="stylesheet"
+            href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css"/>
+    <!-- Google Font: Source Sans Pro -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700"
+            rel="stylesheet"/>
+    <!-- bootstrap rtl -->
+    <link rel="stylesheet" href="dist/css/bootstrap-rtl.min.css"/>
+    <!-- template rtl version -->
+    <link rel="stylesheet" href="dist/css/custom-style.css"/>
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+    <!-- Navbar -->
+    <nav
+            class="main-header navbar navbar-expand bg-white navbar-light border-bottom"></nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-success elevation-4">
+        <!-- Sidebar -->
+        <div class="sidebar" style="direction: ltr">
+            <div style="direction: rtl">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <!-- <div class="image">
+    <img src="https://www.gravatar.com/avatar/52f0fbcbedee04a121cba8dad1174462?s=200&d=mm&r=g" class="img-circle elevation-2" alt="User Image">
+  </div> -->
+                    <div class="info">
+                        <a href="#" class="d-block">نام کاربر</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul
+                            class="nav nav-pills nav-sidebar flex-column"
+                            data-widget="treeview"
+                            role="menu"
+                            data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+         with font-awesome or any other icon font library -->
+                        <li class="nav-item has-treeview menu-open">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fa fa-dashboard"></i>
+                                <p>
+                                    داشبورد
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="UserProfile.html" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>پروفایل</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>خدمات</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>تاریخچه</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="join.html" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>تخصیص</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="AdMedicalUser.html" class="nav-link">
+                                        <i class="fa fa-circle-o nav-icon"></i>
+                                        <p>ایجاد خدمات</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark">داشبورد</h1>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-left">
+                            <li class="breadcrumb-item"><a href="#">خانه</a></li>
+                        </ol>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <!-- Small boxes (Stat box) -->
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-light">
+                            <div class="inner">
+                                <p>پروفایل</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-bag"></i>
+                            </div>
+                            <a href="#" class="small-box-footer">مشاهده</a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-light">
+                            <div class="inner">
+                                <p>درخواست ها</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-stats-bars"></i>
+                            </div>
+                            <a href="#" class="small-box-footer">مشاهده</a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-light">
+                            <div class="inner">
+                                <p>پرداختی</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-person-add"></i>
+                            </div>
+                            <a href="#" class="small-box-footer">مشاهده</a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-light">
+                            <div class="inner">
+                                <p>خدمات</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-pie-graph"></i>
+                            </div>
+                            <a href="#" class="small-box-footer">مشاهده</a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                </div>
+                <!-- /.row -->
+                <!-- Main row -->
+
+                <!-- /.row (main row) -->
+            </div>
+            <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+
+        <section class="content">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">آخرین خدمات ثبت شده</h3>
+
+                                <div class="card-tools">
+                                    <div class="input-group input-group-sm" style="width: 150px;">
+                                        <input type="text" name="table_search" class="form-control float-right"
+                                               placeholder="جستجو">
+
+                                        <div class="input-group-append">
+                                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body table-responsive p-0">
+                                <table class="table table-hover text-center table-striped">
+                                    <tr>
+                                        <th>شماره</th>
+                                        <th>نام خدمات</th>
+                                        <th>تاریخ</th>
+                                        <th>ساعت</th>
+                                        <th>وضعیت</th>
+                                        <th>نوع خدمت</th>
+                                        <th>نام دکتر</th>
+                                        <th>آدرس</th>
+                                        <th>شماره اتاق</th>
+                                        <th>توضیحات</th>
+                                        <td>انتخاب</td>
+                                    </tr>
+                                    <tr class="text-sm">
+                                        <td>183</td>
+                                        <td>گوش و حلق بینی</td>
+                                        <td>11-7-2014</td>
+                                        <td>17</td>
+                                        <td><span class="badge badge-success">فعال</span></td>
+                                        <td>آنلاین</td>
+                                        <td class="text-muted">دکتر سیدرضا سیدمحمددولابی</td>
+                                        <td>مشاوره «غیرحضوری» است.
+
+                                            بعد از نوبت گیری، در روز مقرر با واتساپ با شما تماس اینترنتی میگیریم.</td>
+                                        <td>14</td>
+                                        <td>متخصص گوش ، گلو ، بینی و جراحی سر و گردن</td>
+                                        <td><button class="btn btn-dark">ثبت</button></td>
+                                    </tr>
+                                    <tr class="text-sm">
+                                        <td>183</td>
+                                        <td>گوش و حلق بینی</td>
+                                        <td>12-8-2014</td>
+                                        <td>12</td>
+                                        <td><span class="badge badge-danger">غیرفعال</span></td>
+                                        <td>حضوری</td>
+                                        <td class="text-muted">دکتر هادی خرم</td>
+                                        <td>نوبت دهی غیرحضوری فقط از طریق تماس با شماره مطب قابل دریافت میباشد این ویزیت از طریق تلگرام و ارسال مدارک و شرح حال امکان پذیر است</td>
+                                        <td>15:30</td>
+                                        <td>فلوشیپ جراحی بینی و سینوس</td>
+                                        <td><button class="btn btn-dark">ثبت</button></td>
+                                    </tr>
+                                    <tr class="text-sm">
+                                        <td>183</td>
+                                        <td>گوش و حلق بینی</td>
+                                        <td>11-7-2014</td>
+                                        <td>17</td>
+                                        <td><span class="badge badge-success">فعال</span></td>
+                                        <td>آنلاین</td>
+                                        <td class="text-muted">دکتر آزاده ناصحی</td>
+                                        <td class="text-sm">شریعتی نرسیده به پل صدر رو به روی در باغ سفارت انگلیس بن بست آفتاب پلاک ۱۶۵۴ طبقه ۴ واحد ۱۳</td>
+                                        <td>13:30</td>
+                                        <td>متخصص گوش و حلق و بینی و جراحی سر و گردن</td>
+                                        <td><button class="btn btn-dark">ثبت</button></td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <strong> &copy; 2024 <a href="#">مهدی پارسا</a>.</strong>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+</body>
+</html>
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="plugins/select2/select2.full.min.js"></script>
+<!-- InputMask -->
+<script src="plugins/input-mask/jquery.inputmask.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<!-- date-range-picker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap color picker -->
+<script src="plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+<!-- SlimScroll 1.3.0 -->
+<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- iCheck 1.0.1 -->
+<script src="plugins/iCheck/icheck.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!-- Persian Data Picker -->
+<script src="dist/js/persian-date.min.js"></script>
+<script src="dist/js/persian-datepicker.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- Page script -->
+<!-- <script>
+    $(function () {
+      //Initialize Select2 Elements
+      $('.select2').select2()
+  
+      //Datemask dd/mm/yyyy
+      $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+      //Datemask2 mm/dd/yyyy
+      $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+      //Money Euro
+      $('[data-mask]').inputmask()
+  
+      //iCheck for checkbox and radio inputs
+      $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+        checkboxClass: 'icheckbox_minimal-blue',
+        radioClass   : 'iradio_minimal-blue'
+      })
+      //Red color scheme for iCheck
+      $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+        checkboxClass: 'icheckbox_minimal-red',
+        radioClass   : 'iradio_minimal-red'
+      })
+      //Flat red color scheme for iCheck
+      $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+        checkboxClass: 'icheckbox_flat-green',
+        radioClass   : 'iradio_flat-green'
+      })
+  
+      //Colorpicker
+      $('.my-colorpicker1').colorpicker()
+      //color picker with addon
+      $('.my-colorpicker2').colorpicker()
+  
+  
+      $('.normal-example').persianDatepicker();
+  
+  
+  
+  
+    })
+  </script> -->
